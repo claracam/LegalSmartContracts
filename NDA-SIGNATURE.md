@@ -58,9 +58,15 @@ contract NDASignature {
 
 The smart contract above facilitates digital acknowledgment of the attached unilateral NDA. You can deploy the contract with ndaDocumentHash: use the keccak256 hash of the NDA text or store the full PDF on IPFS and use the CID.
 
+The NDA template is attached [here](./Unilateral-NDA.docx).
+
+
 **Claracam's legal notes:**
+- This is a UNILATERAL ⬅️ contract. This means that only one of the parties has to commit to keeping secret, not the other. And why, may you ask? Because in some cases only one of the parties is about to share sensitive information with the other, and not vice versa.
+- > i.e. Service providers who work on integrations or dev work of a company. The company opens up its entire code and infrastructure to the service provider, who in turn doesn't have to disclose any of their internal data to the company.
+- If you want a BILATERAL ↔️ contract, leave a comment and I'll provide.
 - Digital signature is not always accepted as a valid form of signing. It depends on the jurisdiction and the type of contract. 
 - > i.e. In Germany, employment contracts must be signed in wet ink by both the employer and the employee. It's not the case for freelancers, who can have an electronically signed contract.
-- > However, NDAs are a private contract that is not regulated under a specific field of law that imposes minimum requirements. This means that the content and validity of the contract is kind of up to the parties, so as long as both accept the contract as valid, it is. If any of the parties wanted to contest it, a court would look into conversations between the parties that happened around the time of signing, parties' behaviour and other signs of whether the contesting party did act assuming that the contract was valid - in which case, he/she cannot contest it now.
+- However, NDAs are a private contract that does not have minimum requirements under general law. This means that the content and validity of the contract is essentially up to the parties, so as long as they both accept the contract as valid, it is. ✅
+- If any of the parties wanted to contest it, a court would look into conversations between the parties that happened around the time of signing, parties' behaviour and other signs of whether the contesting party did act assuming that the contract was valid - in which case, he/she cannot contest it now. 👩🏻‍⚖️
 - Timestamped signing on-chain is verifiable but not equivalent to notarization. This is the same for e-signing platforms such as DocuSign, HolaSign, DropboxSign, etc.
-- The NDA template is attached [here](./Unilateral-NDA.docx).
