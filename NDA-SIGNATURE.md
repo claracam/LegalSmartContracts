@@ -1,9 +1,8 @@
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.19;
+// SPDX-License-Identifier: Apache 2.0;
 
-/// @title **Unilateral NDA Contract**
+/// @title **Mutual NDA**
 /// @author claracam
-/// @notice Enables Ethereum users to digitally sign a predefined unilateral NDA
+/// @notice Enables Ethereum users to digitally sign a predefined England-based NDA
 /// @dev This contract refers to the NDA document stored in the same GitHub repo/branch
 
 contract NDASignature {
