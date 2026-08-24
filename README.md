@@ -22,7 +22,7 @@ Blockchain layer (non-deterministic, on-chain execution):
 
 In essence, the blockchain layer allows us to cryptographically sign the NDA by 2 wallets; establish that both parties accepted exactly the same version; record the execution timestamp as the date when it starts being effective; lock the default agreed parameters; and create an immutable audit trail of subsequent actions.
 
-We're gonna use **EIP-712** because of its capabilities to let wallets sign structured, human-readable typed data rather than an opaque blob, and it includes domain separation such as chain ID and verifying contract.
+We're gonna use **EIP-712** for the smart wallet design because of its capabilities to let wallets sign structured, human-readable typed data rather than an opaque blob. The contract templates themselves will be stored on **Arweave** which enables permanent, long form, data storage.
 
 All blueprints are based on international principles of law that are generally applied across jurisdictions. This is not legal advice nor tailored contracts - if you require legal assistance, please contact qualified counsel. Contributions are very welcome - feel free to add deep dive readmes, new contract types or specific jurisdictions that regulate the topic differently.
 
